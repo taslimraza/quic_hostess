@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_patrondetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/label_patron_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Diner:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_name"
+	        android:layout_toRightOf="@id/label_patron_name"
+	        android:text="Guest"
+	        />
+        <TextView
+            android:id="@+id/label_patron_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Phone: "             
+	        android:textStyle="bold" 
+	        android:layout_below="@id/label_patron_name"
+            />
+	    <TextView
+	        android:id="@+id/patron_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_phone"
+	        android:layout_toRightOf="@id/label_patron_phone"
+	        android:text="(nnn)nnn-nnnn"
+	        />
+        <TextView
+            android:id="@+id/label_patron_timein"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_phone"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Time Ordered:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_timein"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_timein"
+	        android:layout_toRightOf="@id/label_patron_timein"
+	        android:text="10:10AM"
+	        />
+
+        <TextView
+            android:id="@+id/label_order_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_timein"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Order Status: "             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/order_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_order_status"
+	        android:layout_toRightOf="@id/label_order_status"
+	        android:text="printed"
+	        />
+        <TextView
+            android:id="@+id/label_patron_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_order_status"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Patron Status: "             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_status"
+	        android:layout_toRightOf="@id/label_patron_status"
+	        android:text="waiting"
+	        />
+	    
+        <TextView
+            android:id="@+id/label_patron_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_status"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Comments: "             
+	        android:textStyle="bold" 
+            />
+   	    <TextView
+	        android:id="@+id/patron_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_comments"
+	        android:layout_toRightOf="@id/label_patron_comments"
+	        android:text=""
+	        android:gravity="top"
+	        android:singleLine="false"
+	        />
+
+   	</RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		>
+
+	    <Button
+            android:id="@+id/btnpatron_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+	        style="@style/ButtonText"
+            android:text="Page" />
+
+   	    <Button
+            android:id="@+id/btnpatron_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+	        style="@style/ButtonText"
+            android:text="Text" />
+
+	    <Button
+            android:id="@+id/btnpatron_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+	        style="@style/ButtonText"
+            android:text="Reprint Order" />
+        
+		<Button
+            android:id="@+id/btnpatron_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="@drawable/btn_red"
+	        style="@style/ButtonText"
+            android:text="Remove" />
+        
+		</LinearLayout>
+
+</RelativeLayout>

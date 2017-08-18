@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage_background"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/tableManagement"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:layout_gravity="center"
+		        android:src="@drawable/icon_hostess"
+		        android:onClick="manageTables"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Table Management"
+		        android:layout_gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	   	</LinearLayout>	
+	    <LinearLayout 
+	        android:id="@+id/carryoutSection"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/carryoutManagement"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@android:color/transparent"
+		        android:layout_gravity="center"
+		        android:src="@drawable/icon_carryout"
+		        android:onClick="manageCarryouts"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Carryouts"
+		        android:layout_gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	   	</LinearLayout>	
+	    
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+        
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="7"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        />
+   	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/btn_settings"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/icon_settings"
+		        android:background="@android:color/transparent"
+		        android:onClick="manageSettings"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Settings"
+		        android:layout_gravity="center_horizontal"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	   	</LinearLayout>	
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/btn_floorplans"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/icon_floor"
+		        android:layout_gravity="center_horizontal"
+		        android:background="@android:color/transparent"
+		        android:onClick="manageFloorplans"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Floor Plans"
+		        android:layout_gravity="center_horizontal"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>	
+        <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/btn_sectionplans"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/icon_section"
+		        android:background="@android:color/transparent"
+		        android:onClick="manageSections"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Section Plans"
+		        android:layout_gravity="center_horizontal"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+   		</LinearLayout>	
+   	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="10"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="20dp"
+	        >
+		    <ImageButton
+		        android:id="@+id/btn_servers"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:src="@drawable/icon_server"
+		        android:background="@android:color/transparent"
+		        android:onClick="manageServers"
+				/>        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Manage Servers"
+		        android:layout_gravity="center_horizontal"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	   	</LinearLayout>	
+  	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_weight="7"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        />
+   	    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V.0.0.0"
+        android:layout_gravity="right|bottom"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</FrameLayout>
